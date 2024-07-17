@@ -2,27 +2,25 @@
 
 import {
   Box,
-  Heading,
-  Text,
   Container,
-  SimpleGrid,
-  Icon,
-  VStack,
+  Heading,
   HStack,
+  Icon,
   Image,
+  SimpleGrid,
+  Text,
+  VStack,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import {
-  FaLeaf,
-  FaSeedling,
-  FaTree,
-  FaPhone,
   FaEnvelope,
-  FaMapMarkerAlt,
-  FaFacebookF,
   FaFacebook,
-  FaLinkedinIn,
+  FaLeaf,
   FaLinkedin,
+  FaMapMarkerAlt,
+  FaPhone,
+  FaSeedling,
+  FaTree
 } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 
@@ -183,9 +181,10 @@ export default function About() {
                 </VStack>
                 <Box>
                   <Image
-                    src="/images/3wd1olog.webp"
+                    src="/images/3wd1olog (1).webp"
                     width={{ base: "100%", md: "220px" }}
                     marginLeft={{ base: 0, md: "155px" }}
+                    alt="fruit"
                   />
                 </Box>
               </SimpleGrid>

@@ -28,7 +28,7 @@ export default function Home() {
       <Box>
         <Box
           as="section"
-          bgImage="url('/images/allphoto-bangkok-vfU-zRRwt60-unsplash.webp')"
+          bgImage="url('/images/allphoto-bangkok-vfU-zRRwt60-unsplash (1) (1) (1) (1) (1) (1) (1).webp')"
           bgPosition="center"
           bgRepeat="no-repeat"
           bgSize="cover"
@@ -71,24 +71,39 @@ export default function Home() {
           as="section"
           py={{ base: 10, md: 20 }}
           textAlign="center"
-          bgImage="url('/images/WhatsApp Image 2024-07-15 at 10.21.07_b7ace6e4.webp')"
+          bgImage="url('/images/kate-dmkCjdBoquU-unsplash (1) (2).webp')"
           bgPosition="center"
           bgRepeat="no-repeat"
           bgSize="cover"
           color="white"
+          position="relative"
         >
-          <Container maxW="container.lg">
+          <Box
+            position="absolute"
+            top="0"
+            left="0"
+            width="100%"
+            height="100%"
+            bg="rgba(0, 0, 0, 0.7)"
+          ></Box>
+          <Container maxW="container.lg" position="relative">
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
               <Box
-                bg="rgba(0, 0, 0, 0.6)"
-                p={5}
-                borderRadius="md"
-                boxShadow="xl"
+                bg="rgba(0, 0, 0, 0.7)"
+                p={8}
+                borderRadius="lg"
+                boxShadow="2xl"
               >
                 <Heading as="h2" size="lg" color="yellow.300" mb={4}>
                   Company Overview
                 </Heading>
-                <Text maxW="3xl" mx="auto" color="white">
+                <Text
+                  maxW="3xl"
+                  mx="auto"
+                  color="white"
+                  fontSize="lg"
+                  fontWeight="semibold"
+                >
                   The palm oil industry is a vital component of the global
                   economy, playing a crucial role in the production of edible
                   oils, cosmetics, and biofuels. Our company, established in
@@ -103,15 +118,21 @@ export default function Home() {
                 </Text>
               </Box>
               <Box
-                bg="rgba(0, 0, 0, 0.6)"
-                p={5}
-                borderRadius="md"
-                boxShadow="xl"
+                bg="rgba(0, 0, 0, 0.7)"
+                p={8}
+                borderRadius="lg"
+                boxShadow="2xl"
               >
                 <Heading as="h2" size="lg" color="yellow.300" mb={4}>
                   Our Products
                 </Heading>
-                <Text maxW="3xl" mx="auto" color="white">
+                <Text
+                  maxW="3xl"
+                  mx="auto"
+                  color="white"
+                  fontSize="lg"
+                  fontWeight="semibold"
+                >
                   We provide a wide array of high-quality palm oil products and
                   services to cater to various needs. From sustainably sourced
                   crude palm oil to refined palm products, our offerings are
@@ -127,20 +148,19 @@ export default function Home() {
           </Container>
         </Box>
 
-        <Box as="section" py={20} textAlign="center" bg="green.200">
+        <Box as="section" py={20} textAlign="center" bg="rgba(0, 0, 0, 0.8)">
           <Container maxW="container.md">
             <Flex justify="center">
               <Box
-                bgGradient="linear(to-r, teal.300, green.900)"
-                color="white"
+                bg="rgba(0, 0, 0, 0.7)"
                 p={8}
                 borderRadius="lg"
                 boxShadow="2xl"
                 maxW="lg"
                 textAlign="left"
               >
-                <Icon as={FaQuoteLeft} boxSize={6} color="white" />
-                <Text mt={4} fontSize="lg" fontWeight="semibold">
+                <Icon as={FaQuoteLeft} boxSize={6} color="yellow.300" />
+                <Text mt={4} fontSize="lg" fontWeight="semibold" color="white">
                   Our experience with Auqi Palm Harvest Co. has been
                   exceptional. Their industry-leading services have
                   significantly enhanced our business operations, setting a new
@@ -150,7 +170,7 @@ export default function Home() {
                   wholeheartedly endorse Auqi Palm Harvest Co. as a trusted
                   partner for advancing success in palm oil production.
                 </Text>
-                <Icon as={FaQuoteRight} boxSize={6} color="white" mt={4} />
+                <Icon as={FaQuoteRight} boxSize={6} color="yellow.300" mt={4} />
                 <Text mt={2} fontStyle="italic" color="gray.200">
                   - Mang Udin 'CEO of PT Jaya Indah'
                 </Text>

@@ -33,7 +33,7 @@ const Navbar = () => {
           <HStack spacing={8}>
             <Link href="/">
               <Image
-                src="/images/palm_oil_company_logo.webp"
+                src="/images/palm_oil_company_logo (1).webp"
                 alt="Company Logo"
                 boxSize={isMobile ? "40px" : "50px"}
                 borderRadius="full"
@@ -89,7 +89,7 @@ const Navbar = () => {
                           _hover={{ bg: "teal.500", color: "white" }}
                           onClick={onClose}
                         >
-                          CONTACT US
+                          Contact Us
                         </Button>
                       </VStack>
                     </DrawerBody>
@@ -123,11 +123,11 @@ const Navbar = () => {
               <Button
                 as="a"
                 href="mailto:aulbg99@gmail.com"
-                colorScheme="teal"
+                colorScheme="blue"
                 variant="outline"
                 _hover={{ bg: "teal.500", color: "white" }}
               >
-                CONTACT US
+                Contact Us
               </Button>
             </HStack>
           )}
