@@ -1,22 +1,23 @@
-
-"use client";
-import { ReactNode } from "react";
-import Navbar from "@/components/Navbar";
-import { Inter } from "next/font/google";
-import "../globals.css"; 
-import CustomChakraProvider from "../providers/ChakraProvider";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "../globals.css";
+import CustomChakraProvider from "../providers/ChakraProvider";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "700"], 
+  weight: ["400", "700"],
 });
 
-interface RootLayoutProps {
-  children: ReactNode;
-}
+export const metadata: Metadata = {
+  title: "Palm Oil",
+  description: "Palm Oil Company Profile",
+};
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <head>

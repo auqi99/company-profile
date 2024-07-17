@@ -28,7 +28,7 @@ export default function Home() {
       <Box>
         <Box
           as="section"
-          bgImage="url('/images/allphoto-bangkok-vfU-zRRwt60-unsplash.jpg')"
+          bgImage="url('/images/allphoto-bangkok-vfU-zRRwt60-unsplash.webp')"
           bgPosition="center"
           bgRepeat="no-repeat"
           bgSize="cover"
@@ -71,7 +71,7 @@ export default function Home() {
           as="section"
           py={{ base: 10, md: 20 }}
           textAlign="center"
-          bgImage="url('/images/WhatsApp Image 2024-07-15 at 10.21.07_b7ace6e4.jpg')"
+          bgImage="url('/images/WhatsApp Image 2024-07-15 at 10.21.07_b7ace6e4.webp')"
           bgPosition="center"
           bgRepeat="no-repeat"
           bgSize="cover"
@@ -162,7 +162,7 @@ export default function Home() {
         <Box as="section" py={10} textAlign="center" bg="white">
           <Container maxW="container.md">
             <Image
-              src="/images/png-transparent-illustration-of-palm-oil-thumbnail-removebg-preview.png"
+              src="/images/png-transparent-illustration-of-palm-oil-thumbnail-removebg-preview.webp"
               alt="Company Logo"
               mx="auto"
               boxSize="150px"

@@ -33,7 +33,7 @@ const Navbar = () => {
           <HStack spacing={8}>
             <Link href="/">
               <Image
-                src="/images/palm_oil_company_logo.png"
+                src="/images/palm_oil_company_logo.webp"
                 alt="Company Logo"
                 boxSize={isMobile ? "40px" : "50px"}
                 borderRadius="full"

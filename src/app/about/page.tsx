@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import {
   Box,
@@ -183,7 +183,7 @@ export default function About() {
                 </VStack>
                 <Box>
                   <Image
-                    src="/images/3wd1olog.png"
+                    src="/images/3wd1olog.webp"
                     width={{ base: "100%", md: "220px" }}
                     marginLeft={{ base: 0, md: "155px" }}
                   />
