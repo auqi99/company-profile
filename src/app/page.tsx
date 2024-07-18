@@ -24,6 +24,8 @@ export default function Home() {
           name="description"
           content="Welcome to our company. Learn more about our services and team."
         />
+        <link rel="preload" as="image" href="/images/allphoto-bangkok-vfU-zRRwt60-unsplash (1) (1) (1) (1) (1) (1) (1).webp" />
+        <link rel="preload" as="image" href="/images/kate-dmkCjdBoquU-unsplash (1) (2).webp" />
       </Head>
       <Box>
         <Box
@@ -187,6 +189,7 @@ export default function Home() {
               mx="auto"
               boxSize="150px"
               borderRadius="full"
+              loading="lazy"
             />
             <Text fontSize="xl" mt={4} color="gray.700">
               "The Greener, The Richer"
