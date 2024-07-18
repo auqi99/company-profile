@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import Head from "next/head";
-import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { FaQuoteLeft, FaQuoteRight, FaBuilding, FaProductHunt, FaThumbsUp, FaLeaf, FaSeedling } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -24,29 +24,16 @@ export default function Home() {
           name="description"
           content="Welcome to our company. Learn more about our services and team."
         />
-        <link rel="preload" as="image" href="/images/allphoto-bangkok-vfU-zRRwt60-unsplash (1) (1) (1) (1) (1) (1) (1).webp" />
-        <link rel="preload" as="image" href="/images/kate-dmkCjdBoquU-unsplash (1) (2).webp" />
       </Head>
       <Box>
         <Box
           as="section"
-          bgImage="url('/images/allphoto-bangkok-vfU-zRRwt60-unsplash (1) (1) (1) (1) (1) (1) (1).webp')"
-          bgPosition="center"
-          bgRepeat="no-repeat"
-          bgSize="cover"
+          bg="linear-gradient(to right, #2c3e50, #4ca1af)"
           color="white"
           py={{ base: 20, md: 40 }}
           textAlign="center"
           position="relative"
         >
-          <Box
-            position="absolute"
-            top="0"
-            left="0"
-            width="100%"
-            height="100%"
-            bg="rgba(0, 0, 0, 0.5)"
-          ></Box>
           <Container maxW="container.lg" position="relative">
             <Heading
               as="h1"
@@ -56,16 +43,17 @@ export default function Home() {
             >
               Auqi Palm Harvest Co
             </Heading>
-            <Text
-              fontSize={{ base: "lg", md: "xl" }}
-              mt={4}
-              maxW="2xl"
-              mx="auto"
-              color="yellow.100"
-              textShadow="1px 1px 3px rgba(0, 0, 0, 0.7)"
-            >
-              Let's Go Green
-            </Text>
+            <Flex justify="center" mt={4}>
+              <Icon as={FaLeaf} boxSize={8} color="yellow.300" mx={2} />
+              <Text
+                fontSize={{ base: "lg", md: "xl" }}
+                color="yellow.100"
+                textShadow="1px 1px 3px rgba(0, 0, 0, 0.7)"
+              >
+                Let's Go Green
+              </Text>
+              <Icon as={FaSeedling} boxSize={8} color="yellow.300" mx={2} />
+            </Flex>
           </Container>
         </Box>
 
@@ -73,21 +61,10 @@ export default function Home() {
           as="section"
           py={{ base: 10, md: 20 }}
           textAlign="center"
-          bgImage="url('/images/kate-dmkCjdBoquU-unsplash (1) (2).webp')"
-          bgPosition="center"
-          bgRepeat="no-repeat"
-          bgSize="cover"
+          bg="linear-gradient(to right, #283048, #859398)"
           color="white"
           position="relative"
         >
-          <Box
-            position="absolute"
-            top="0"
-            left="0"
-            width="100%"
-            height="100%"
-            bg="rgba(0, 0, 0, 0.7)"
-          ></Box>
           <Container maxW="container.lg" position="relative">
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
               <Box
@@ -96,6 +73,7 @@ export default function Home() {
                 borderRadius="lg"
                 boxShadow="2xl"
               >
+                <Icon as={FaBuilding} boxSize={10} color="yellow.300" mb={4} />
                 <Heading as="h2" size="lg" color="yellow.300" mb={4}>
                   Company Overview
                 </Heading>
@@ -125,6 +103,7 @@ export default function Home() {
                 borderRadius="lg"
                 boxShadow="2xl"
               >
+                <Icon as={FaProductHunt} boxSize={10} color="yellow.300" mb={4} />
                 <Heading as="h2" size="lg" color="yellow.300" mb={4}>
                   Our Products
                 </Heading>
@@ -150,7 +129,12 @@ export default function Home() {
           </Container>
         </Box>
 
-        <Box as="section" py={20} textAlign="center" bg="rgba(0, 0, 0, 0.8)">
+        <Box
+          as="section"
+          py={20}
+          textAlign="center"
+          bg="linear-gradient(to right, #283048, #859398)"
+        >
           <Container maxW="container.md">
             <Flex justify="center">
               <Box
@@ -161,7 +145,7 @@ export default function Home() {
                 maxW="lg"
                 textAlign="left"
               >
-                <Icon as={FaQuoteLeft} boxSize={6} color="yellow.300" />
+                <Icon as={FaThumbsUp} boxSize={6} color="yellow.300" />
                 <Text mt={4} fontSize="lg" fontWeight="semibold" color="white">
                   Our experience with Auqi Palm Harvest Co. has been
                   exceptional. Their industry-leading services have
@@ -172,7 +156,7 @@ export default function Home() {
                   wholeheartedly endorse Auqi Palm Harvest Co. as a trusted
                   partner for advancing success in palm oil production.
                 </Text>
-                <Icon as={FaQuoteRight} boxSize={6} color="yellow.300" mt={4} />
+                <Icon as={FaThumbsUp} boxSize={6} color="yellow.300" mt={4} />
                 <Text mt={2} fontStyle="italic" color="gray.200">
                   - Mang Udin 'CEO of PT Jaya Indah'
                 </Text>
